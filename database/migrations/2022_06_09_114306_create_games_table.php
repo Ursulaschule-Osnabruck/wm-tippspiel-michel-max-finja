@@ -21,6 +21,7 @@ class CreateGamesTable extends Migration
             $table->integer('tore_heim');
             $table->integer('tore_gast');
             $table->dateTime('spielzeit');
+            $table->string('spielort');
             $table->timestamps();
             
         });
