@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Models\Game;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,4 +27,13 @@ Route::get('/regeln', function () {
 
 Route::get('/regeln2', function () {
     return view('KarteRegeln');
+});
+
+Route::get('/spiele', function () {
+
+    $spiele = Game::all();
+
+    //dd($spiele);
+
+    return view('home',  ['spiele'=> $spiele]);
 });

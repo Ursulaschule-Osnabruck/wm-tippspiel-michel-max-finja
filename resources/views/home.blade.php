@@ -47,6 +47,22 @@
             </div>
             
         </div>
+        <table class="table">
+        <tr> 
+            <th>Mannschaft 1</th> <th>Mannschaft 2</th> <th>Gruppe</th> <th>Spielzeit</th> <th>Stadion</th> <th>Endstand</th> 
+        </tr>
+        
+        @foreach($spiele as $game)
+            <tr> 
+                <td>{{ $game->gibHeimTeam->teamname }} <img src=" {{ $game->gibHeimTeam->image }} " /></td> 
+                <td>{{ $game->gibGastTeam->teamname }} <img src=" {{ $game->gibHeimTeam->image }} " /></td> 
+                <td>{{ $game->gibHeimTeam->group }}</td> 
+                <td>{{ $game->spielzeit }}</td> 
+                <td>{{ $game->spielort }}</td> 
+                <td>{{ $game->gibHeimTeam->kuerzel }} {{ $game->tore_heim }} : {{ $game->tore_gast }} {{ $game->gibGastTeam->kuerzel }}</td> 
+            </tr>
+        @endforeach
+    </table>
     </main>
 
 
