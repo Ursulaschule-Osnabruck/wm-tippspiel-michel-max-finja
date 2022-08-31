@@ -61,14 +61,15 @@ class DatabaseSeeder extends Seeder
 
 
 
-        DB::table('games') ->insert(['heim_id' => '3', 'gast_id' => '4' , 'group' => 'A' , 'tore_heim' => '0' , 'tore_gast' => '0' , 'spielzeit' => '11:00' , 'spielort' => 'al-Thumama Stadium']);
-        DB::table('games') ->insert(['heim_id' => '5', 'gast_id' => '6' , 'group' => 'B' , 'tore_heim' => '0' , 'tore_gast' => '0' , 'spielzeit' => '14:00' , 'spielort' => 'Khalifa International Stadium']);
-        DB::table('games') ->insert(['heim_id' => '1', 'gast_id' => '2' , 'group' => 'A' , 'tore_heim' => '0' , 'tore_gast' => '0' , 'spielzeit' => '17:00' , 'spielort' => 'al-Bayt Stadium']);
-        DB::table('games') ->insert(['heim_id' => '7', 'gast_id' => '8' , 'group' => 'B' , 'tore_heim' => '0' , 'tore_gast' => '0' , 'spielzeit' => '20:00' , 'spielort' => 'Ahmed bin Ali Stadium']);
-        DB::table('games') ->insert(['heim_id' => '9', 'gast_id' => '10' , 'group' => 'C' , 'tore_heim' => '0' , 'tore_gast' => '0' , 'spielzeit' => '11:00' , 'spielort' => 'Lusail Stadium']);
-        DB::table('games') ->insert(['heim_id' => '15', 'gast_id' => '16' , 'group' => 'D' , 'tore_heim' => '0' , 'tore_gast' => '0' , 'spielzeit' => '14:00' , 'spielort' => 'Education City Stadium']);
-        DB::table('games') ->insert(['heim_id' => '11', 'gast_id' => '12' , 'group' => 'C' , 'tore_heim' => '0' , 'tore_gast' => '0' , 'spielzeit' => '17:00' , 'spielort' => 'Stadium 974']);
-        DB::table('games') ->insert(['heim_id' => '13', 'gast_id' => '14' , 'group' => 'D' , 'tore_heim' => '0' , 'tore_gast' => '0' , 'spielzeit' => '20:00' , 'spielort' => 'al-Janoub Stadium']);
-
+        DB::table('games') ->insert(['heim_id' => '3', 'gast_id' => '4' , 'group' => 'A' , 'tore_heim' => '0' , 'tore_gast' => '0' , 'spielzeit' => '2022-06-23 11:00:00' , 'spielort' => 'al-Thumama Stadium']);
+        
+        DB::table('games') ->insert(['heim_id' => '5', 'gast_id' => '6' , 'group' => 'B' , 'tore_heim' => '0' , 'tore_gast' => '0' , 'spielzeit' => '2022-06-23 14:00:00' , 'spielort' => 'Khalifa International Stadium']);
+        /*DB::table('games') ->insert(['heim_id' => '1', 'gast_id' => '2' , 'group' => 'A' , 'tore_heim' => '0' , 'tore_gast' => '0' , 'spielzeit' => '17:00:00' , 'spielort' => 'al-Bayt Stadium']);
+        DB::table('games') ->insert(['heim_id' => '7', 'gast_id' => '8' , 'group' => 'B' , 'tore_heim' => '0' , 'tore_gast' => '0' , 'spielzeit' => '20:00:00' , 'spielort' => 'Ahmed bin Ali Stadium']);
+        DB::table('games') ->insert(['heim_id' => '9', 'gast_id' => '10' , 'group' => 'C' , 'tore_heim' => '0' , 'tore_gast' => '0' , 'spielzeit' => '11:00:00' , 'spielort' => 'Lusail Stadium']);
+        DB::table('games') ->insert(['heim_id' => '15', 'gast_id' => '16' , 'group' => 'D' , 'tore_heim' => '0' , 'tore_gast' => '0' , 'spielzeit' => '14:00:00' , 'spielort' => 'Education City Stadium']);
+        DB::table('games') ->insert(['heim_id' => '11', 'gast_id' => '12' , 'group' => 'C' , 'tore_heim' => '0' , 'tore_gast' => '0' , 'spielzeit' => '17:00:00' , 'spielort' => 'Stadium 974']);
+        DB::table('games') ->insert(['heim_id' => '13', 'gast_id' => '14' , 'group' => 'D' , 'tore_heim' => '0' , 'tore_gast' => '0' , 'spielzeit' => '20:00:00' , 'spielort' => 'al-Janoub Stadium']);
+*/
     }
 }
