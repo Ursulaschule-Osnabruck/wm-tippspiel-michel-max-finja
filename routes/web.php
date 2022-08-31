@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Game;
+use App\Models\User;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -36,4 +37,13 @@ Route::get('/spiele', function () {
     //dd($spiele);
 
     return view('home',  ['spiele'=> $spiele]);
+});
+
+Route::get('/tabelle', function () {
+
+    $user = User::all();
+
+    //dd($spiele);
+
+    return view('home',  ['tabelle'=> $user]);
 });
